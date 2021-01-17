@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "zer0cod3",
+    "database": "week4",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "dharma",
+    "password": "password",
+    "database": "db_hallocorona",
+    "host": "192.168.1.87",
+    "dialect": "mysql"
+  }
+}
