@@ -41,7 +41,7 @@ pipeline {
      stage('Remove Unused docker image') {
        steps{
          sh "docker rmi $dockerRegistry:latest"
-         sh 'docker rmi -f $(docker images -f "dangling=true" -q)'
+         #sh 'docker rmi -f $(docker images -f "dangling=true" -q)'
        }
      }
      stage('Deploy App') {
