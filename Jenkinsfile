@@ -17,11 +17,11 @@ pipeline {
          sh 'npm install'
        }
     }
-    stage('Test') {
-      steps {
-        sh 'npm test'
-      }
-    }
+#    stage('Test') {
+#      steps {
+#        sh 'npm test'
+#      }
+#    }
     stage('Building image') {
        steps{
          script {
@@ -46,14 +46,14 @@ pipeline {
      }
      stage('Deploy App') {
         steps{
-          sshagent(credentials: ['frontend']){
+          sshagent(credentials: ['be']){
             //  sh 'git config user.email "dharmatkjone@gmail.com"'
             //  sh 'git config user.name "igstbagusdharmaputra"'
-             sh """ ssh -t -t devops@192.168.1.9 -o StrictHostKeyChecking=no << EOF 
-                cd /home/devops/app-3/
+             sh """ ssh -t -t devops@10.10.2.60 -o StrictHostKeyChecking=no << EOF 
+                cd /home/devops/hallo-corona-backend
                 docker-compose down
                 git pull origin master
-                docker rmi dharmatkj/nodejs-app:latest
+                docker rmi dharmatkj/hallo-corona-be:latest
                 docker-compose up -d
                 exit
                 EOF"""
