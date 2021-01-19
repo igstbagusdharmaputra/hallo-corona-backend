@@ -11,3 +11,7 @@ POST http://localhost:5000/api/v1/article
 GET http://localhost:5000/api/v1/article
 GET http://localhost:5000/api/v1/article/1
 ```
+
+# DEMO CI/CD Jenkins
+
+https://youtu.be/AF-Pp2H-Y4U
