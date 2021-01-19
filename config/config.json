@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "zer0cod3",
-    "database": "week4",
-    "host": "127.0.0.1",
+    "username": "dharma",
+    "password": "password",
+    "database": "db_hallocorona",
+    "host": "10.10.2.223",
     "dialect": "mysql"
   },
   "test": {
@@ -17,7 +17,7 @@
     "username": "dharma",
     "password": "password",
     "database": "db_hallocorona",
-    "host": "192.168.1.87",
+    "host": "10.10.2.223",
     "dialect": "mysql"
   }
 }
