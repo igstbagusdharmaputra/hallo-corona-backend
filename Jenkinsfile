@@ -1,6 +1,6 @@
 pipeline {
   environment {
-     dockerRegistry = "dharmatkj/nodejs-app"
+     dockerRegistry = "dharmatkj/hallo-corona-be"
      dockerRegistryCredential = 'dockerhub'
      dockerImage = ''
   }
@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-	      git credentialsId: 'github', url: 'https://github.com/igstbagusdharmaputra/Docker-NodeJS-Part-3'
+	      git credentialsId: 'be', url: 'git@github.com:igstbagusdharmaputra/hallo-corona-backend.git'
       }
     }
     stage('Build') {

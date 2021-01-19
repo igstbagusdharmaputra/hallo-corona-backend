@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "dharma",
+    "username": "root",
     "password": "password",
     "database": "db_hallocorona",
     "host": "10.10.2.223",
@@ -14,7 +14,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "dharma",
+    "username": "root",
     "password": "password",
     "database": "db_hallocorona",
     "host": "10.10.2.223",
